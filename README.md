@@ -14,7 +14,7 @@ Predice, para cinco acciones tecnológicas (ADBE, CRM, MU, ORCL, TXN), si el dí
 - **Serie de tiempo:** rezagos causales de precio y volumen (momentum, volatilidad, RSI, MACD, bandas de Bollinger).
 - **Texto:** titulares de noticias de [FNSPID](https://huggingface.co/datasets/Zihan1004/FNSPID) convertidos en *embeddings* con [FinBERT](https://huggingface.co/ProsusAI/finbert).
 
-Compara una regresión logística con red elástica frente a un *gradient boosting*, con 10 pliegues cronológicos, prueba de hipótesis pareada y evaluación en un conjunto de prueba ciego (2022–2023), apartado antes de explorar los datos. Antes de optimizar evalúa un *baseline* simple (regresión logística por defecto) y dos referencias que no aprenden nada, y contrasta los modelos contra ellos. Incluye una ablación que mide si las noticias aportan información adicional a los precios, intervalos por remuestreo de bloques en la prueba ciega y un diagrama de calibración.
+Compara una regresión logística con red elástica frente a un *gradient boosting*, con 20 pliegues cronológicos, prueba de hipótesis pareada y evaluación en un conjunto de prueba ciego (2022–2023), apartado antes de explorar los datos. Antes de optimizar evalúa un *baseline* simple (regresión logística por defecto) y dos referencias que no aprenden nada, y contrasta los modelos contra ellos. Incluye una ablación que mide si las noticias aportan información adicional a los precios, intervalos por remuestreo de bloques en la prueba ciega y un diagrama de calibración.
 
 Una primera formulación del proyecto intentaba predecir la dirección del retorno; no superó la referencia sin habilidad y se documenta en las limitaciones de la libreta.
 
@@ -48,7 +48,7 @@ jupyter notebook Proyecto_Final_ML_Mercados.ipynb
 
 ## Reproducibilidad
 
-Las salidas publicadas son de una ejecución en Google Colab con GPU T4 (Python 3.13.16, NumPy 2.4.6, pandas 2.2.3, scikit-learn 1.6.1, SciPy 1.16.3). La semilla está fija, pero no todas las cifras se repiten al volver a ejecutar. Las referencias, el *baseline* y la regresión logística se repitieron entre dos ejecuciones en Colab; el *gradient boosting* terminó en otros hiperparámetros, y con él cambió el resultado de la prueba de hipótesis que lo compara con la regresión logística. La sección 0 de la libreta documenta tres ejecuciones y sus diferencias.
+Las salidas publicadas son de una ejecución en Google Colab con GPU T4 (Python 3.13.16, NumPy 2.4.6, pandas 2.2.3, scikit-learn 1.6.1, SciPy 1.16.3). La semilla está fija, pero no todas las cifras se repiten al volver a ejecutar. Con una versión anterior de 10 pliegues, las referencias, el *baseline* y la regresión logística se repitieron entre dos ejecuciones en Colab; el *gradient boosting* terminó cada vez en otros hiperparámetros, y con él cambió el p-valor de la prueba de hipótesis que lo compara con la regresión logística. La versión publicada usa 20 pliegues y está sujeta a la misma advertencia. La sección 0 de la libreta lo documenta.
 
 ## Datos
 
