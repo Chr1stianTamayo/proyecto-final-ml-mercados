@@ -46,6 +46,10 @@ pip install -r requirements.txt
 jupyter notebook Proyecto_Final_ML_Mercados.ipynb
 ```
 
+## Reproducibilidad
+
+Las salidas publicadas son de una ejecución en Google Colab con GPU T4 (Python 3.13.16, NumPy 2.4.6, pandas 2.2.3, scikit-learn 1.6.1, SciPy 1.16.3). La semilla está fija, pero no todas las cifras se repiten al volver a ejecutar. Las referencias, el *baseline* y la regresión logística se repitieron entre dos ejecuciones en Colab; el *gradient boosting* terminó en otros hiperparámetros, y con él cambió el resultado de la prueba de hipótesis que lo compara con la regresión logística. La sección 0 de la libreta documenta tres ejecuciones y sus diferencias.
+
 ## Datos
 
 No hay que descargar nada a mano. La libreta obtiene:
