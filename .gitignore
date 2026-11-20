@@ -1,0 +1,7 @@
+# Solo se publican los entregables; todo lo demás de la carpeta queda fuera.
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/Proyecto_Final_ML_Mercados.ipynb
+!/Proyecto_Final_ML_Mercados.pdf
