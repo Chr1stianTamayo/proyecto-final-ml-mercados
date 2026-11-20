@@ -71,14 +71,6 @@ Los resultados intermedios se guardan en `datos/` y se reutilizan en ejecuciones
 9. Conclusiones
 10. Referencias
 
-## Garantías contra la fuga de información
-
-- El período de prueba se aparta antes del análisis exploratorio.
-- Las variables de precio se verifican con una prueba de causalidad (truncar el futuro no cambia el pasado).
-- Una noticia solo se usa después del cierre de la primera sesión posterior a su fecha de publicación.
-- Todo paso con parámetros aprendidos vive en un `Pipeline` de scikit-learn y se ajusta solo con entrenamiento.
-- La validación es cronológica, por fechas únicas, con una brecha de 5 sesiones.
-
 ## Licencias de los datos
 
 FNSPID y FinBERT se distribuyen para uso no comercial. Este repositorio no redistribuye sus datos: la libreta los descarga de sus fuentes originales.
