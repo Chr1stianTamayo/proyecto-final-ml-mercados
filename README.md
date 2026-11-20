@@ -3,7 +3,7 @@
 Proyecto final de **Fundamentos del Aprendizaje Automático** (profesor Felipe Grijalva).
 Autor: Christian Tamayo.
 
-Todo el proyecto está en una sola libreta: [`Proyecto_Final_ML_Mercados.ipynb`](Proyecto_Final_ML_Mercados.ipynb). No hay informe separado; [`Proyecto_Final_ML_Mercados.pdf`](Proyecto_Final_ML_Mercados.pdf) es la misma libreta ejecutada, exportada a PDF.
+Todo el proyecto está en una sola libreta: [`Proyecto_Final_ML_Mercados.ipynb`](Proyecto_Final_ML_Mercados.ipynb); [`Proyecto_Final_ML_Mercados.pdf`](Proyecto_Final_ML_Mercados.pdf) es la misma libreta ejecutada, exportada a PDF.
 
 [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Chr1stianTamayo/proyecto-final-ml-mercados/blob/main/Proyecto_Final_ML_Mercados.ipynb)
 
@@ -60,18 +60,16 @@ Los resultados intermedios se guardan en `datos/` y se reutilizan en ejecuciones
 
 ## Estructura de la libreta
 
-| Sección | Ítem de la rúbrica |
-|---|---|
-| 1. Introducción | Introducción |
-| 2. Datos y análisis exploratorio | EDA |
-| 3. Extracción de características | Feature Extraction |
-| 4. Particionado y *pipelines* | Pipelines |
-| 5. Selección de características | Feature Selection |
-| 6. Optimización de hiperparámetros | Optimización de hiperparámetros |
-| 7. Comparación estadística | Comparación estadística de 2 técnicas ML |
-| 8. Visualización con t-SNE | Visualización con TSNE |
-| 9. Conclusiones | Conclusiones |
-| 10. Referencias | Referencias |
+1. Introducción
+2. Datos y análisis exploratorio
+3. Extracción de características
+4. Particionado y *pipelines*
+5. Selección de características
+6. Optimización de hiperparámetros
+7. Comparación estadística
+8. Visualización con t-SNE
+9. Conclusiones
+10. Referencias
 
 ## Garantías contra la fuga de información
 
